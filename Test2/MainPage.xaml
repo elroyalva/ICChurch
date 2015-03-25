@@ -1,0 +1,48 @@
+﻿<Page
+    x:Class="Test2.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Test2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <WebView x:Name="WebViewControl"
+             HorizontalAlignment="Stretch"
+             VerticalAlignment="Stretch"
+             NavigationCompleted="Browser_NavigationCompleted" />
+
+    <!--<Page.BottomAppBar>
+        <CommandBar Opacity="0.4" ClosedDisplayMode="Compact">
+            <CommandBar.PrimaryCommands>
+                <AppBarButton
+                    x:Name="AnnouncementsAppBarButton"
+                    x:Uid="AnnouncementsAppBarButton"
+                    Click="AnnouncementsAppBarButton_Click"
+                    Label="Notices" 
+                    Icon="Flag"
+                    Content="http://www.icchurchborivali.org/m/notices/index.html"/>
+                <AppBarButton
+                    x:Name="HomeAppBarButton"
+                    x:Uid="HomeAppBarButton"
+                    Click="HomeAppBarButton_Click"
+                    Icon="Home"
+                    Label="Home"/>
+            </CommandBar.PrimaryCommands>
+            <CommandBar.SecondaryCommands>
+                <AppBarButton
+                    x:Name="PrayerAppBarButton"
+                    x:Uid="PrayerAppBarButton"
+                    Click="PrayerAppBarButton_Click"
+                    Label="Prayer Requests"
+                    Content=""/>
+                <AppBarButton
+                    x:Name="ContactAppBarButton"
+                    x:Uid="ContactAppBarButton"
+                    Click="ContactAppBarButton_Click"
+                    Label="Contact us"/>
+            </CommandBar.SecondaryCommands>
+        </CommandBar>
+    </Page.BottomAppBar>-->
+</Page>

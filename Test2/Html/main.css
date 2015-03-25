@@ -1,0 +1,7 @@
+#tbl-custom{text-align: center;width:100%;}
+#tbl-custom td{padding: 8px;color: #63C;}
+#tbl-custom .odd{background: #FFC; opacity:0.8;}
+#tbl-custom .justify{text-align:justify;}
+#tbl-custom-contact{width:100%;}
+.odd{background: #FFC; opacity:0.8;}
+.header{text-align: center;color: #63C;background: #FFC; opacity:0.8;padding: 8px;}

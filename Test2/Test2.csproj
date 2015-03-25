@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CBB2D2D7-6BAD-480F-BC50-25D81EE32CD4}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Test2</RootNamespace>
+    <AssemblyName>Test2</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformVersion>8.1</TargetPlatformVersion>
+    <MinimumVisualStudioVersion>12</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{76F1466A-8B6D-4E39-A767-685A06062A39};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <Content Include="Html\christianDevotion.html" />
+    <Content Include="Html\faq.html" />
+    <Content Include="Html\marian.html" />
+    <Content Include="Html\occasions.html" />
+    <Content Include="Html\prayers.html" />
+    <None Include="Html\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Assets\ic_launcher.png" />
+    <Content Include="Assets\ic_splash.png" />
+    <Content Include="Html\cells.html" />
+    <Content Include="Html\css\bootstrap-superhero.min.css" />
+    <Content Include="Html\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="Html\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="Html\fonts\glyphicons-halflings-regular.woff2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Logo.scale-240.png" />
+    <Content Include="Assets\SmallLogo.scale-240.png" />
+    <Content Include="Assets\SplashScreen.scale-240.png" />
+    <Content Include="Assets\Square71x71Logo.scale-240.png" />
+    <Content Include="Assets\StoreLogo.scale-240.png" />
+    <Content Include="Assets\WideLogo.scale-240.png" />
+    <Content Include="Html\cells-altar-servers.html" />
+    <Content Include="Html\cells-basca.html" />
+    <Content Include="Html\cells-bible-cell.html" />
+    <Content Include="Html\cells-bombay-catholic-sabha.html" />
+    <Content Include="Html\cells-catechesis.html" />
+    <Content Include="Html\cells-charismatic-english.html" />
+    <Content Include="Html\cells-charismatic-konkani.html" />
+    <Content Include="Html\cells-civic-political.html" />
+    <Content Include="Html\cells-clc-english.html" />
+    <Content Include="Html\cells-clc-konkani.html" />
+    <Content Include="Html\cells-communication-cell.html" />
+    <Content Include="Html\cells-confraternity.html" />
+    <Content Include="Html\cells-eucharistic-ministers.html" />
+    <Content Include="Html\cells-family-cell.html" />
+    <Content Include="Html\cells-hope-and-life.html" />
+    <Content Include="Html\cells-icc-care.html" />
+    <Content Include="Html\cells-icsy.html" />
+    <Content Include="Html\cells-legion-of-mary.html" />
+    <Content Include="Html\cells-liturgy-english.html" />
+    <Content Include="Html\cells-liturgy-konkani.html" />
+    <Content Include="Html\cells-liturgy-marathi.html" />
+    <Content Include="Html\cells-parivartan-kendra.html" />
+    <Content Include="Html\cells-pre-baptism.html" />
+    <Content Include="Html\cells-rcia.html" />
+    <Content Include="Html\cells-scc.html" />
+    <Content Include="Html\cells-ssvp-adults.html" />
+    <Content Include="Html\cells-ssvp-youth.html" />
+    <Content Include="Html\cells-ushers.html" />
+    <Content Include="Html\cells-womens-cell.html" />
+    <Content Include="Html\cells-youth-council.html" />
+    <Content Include="Html\css\bootstrap-theme.min.css" />
+    <Content Include="Html\css\bootstrap.min.css" />
+    <Content Include="Html\css\phone.css" />
+    <Content Include="Html\faqs-baptism.html" />
+    <Content Include="Html\faqs-corrections-registers.html" />
+    <Content Include="Html\faqs-east-indian-remarks.html" />
+    <Content Include="Html\faqs-engagement.html" />
+    <Content Include="Html\faqs-eucharist.html" />
+    <Content Include="Html\faqs-funerals.html" />
+    <Content Include="Html\faqs-marriage-certificates.html" />
+    <Content Include="Html\faqs-marriage.html" />
+    <Content Include="Html\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Html\img_parish_team.jpg" />
+    <Content Include="Html\impContacts.html" />
+    <Content Include="Html\index.html" />
+    <Content Include="Html\jquery-1.6.4.min.js" />
+    <Content Include="Html\jquery.mobile-1.0.min.css" />
+    <Content Include="Html\jquery.mobile-1.0.min.js" />
+    <Content Include="Html\js\bootstrap.min.js" />
+    <Content Include="Html\js\jquery.min.js" />
+    <Content Include="Html\main.css" />
+    <Content Include="Html\mass-services.html" />
+    <Content Include="Html\num-emergency.html" />
+    <Content Include="Html\num-finance-team.html" />
+    <Content Include="Html\num-icc-care.html" />
+    <Content Include="Html\num-institutional.html" />
+    <Content Include="Html\num-ppc.html" />
+    <Content Include="Html\num-ppt.html" />
+    <Content Include="Html\num-property-team.html" />
+    <Content Include="Html\num-religious.html" />
+    <Content Include="Html\ourParish.html" />
+    <Content Include="Html\parish-history.html" />
+    <Content Include="Html\parish-mission.html" />
+    <Content Include="Html\parish-portfolis-sectors.html" />
+    <Content Include="Html\parish-profile.html" />
+    <Content Include="Html\prayers-act-of-contrition.html" />
+    <Content Include="Html\prayers-angelus.html" />
+    <Content Include="Html\prayers-before-an-operation.html" />
+    <Content Include="Html\prayers-before-exams.html" />
+    <Content Include="Html\prayers-before-important-decisions.html" />
+    <Content Include="Html\prayers-before-journey.html" />
+    <Content Include="Html\prayers-before-meetings.html" />
+    <Content Include="Html\prayers-blessings-for-nature.html" />
+    <Content Include="Html\prayers-christian-candle-of-hope.html" />
+    <Content Include="Html\prayers-dedication-of-home.html" />
+    <Content Include="Html\prayers-family.html" />
+    <Content Include="Html\prayers-fatima-prayer.html" />
+    <Content Include="Html\prayers-for-bedridden.html" />
+    <Content Include="Html\prayers-for-bereaved.html" />
+    <Content Include="Html\prayers-for-caregivers.html" />
+    <Content Include="Html\prayers-for-civic-leaders.html" />
+    <Content Include="Html\prayers-for-direction.html" />
+    <Content Include="Html\prayers-for-inner-healing.html" />
+    <Content Include="Html\prayers-for-media-workers.html" />
+    <Content Include="Html\prayers-for-peace.html" />
+    <Content Include="Html\prayers-for-rain.html" />
+    <Content Include="Html\prayers-for-students.html" />
+    <Content Include="Html\prayers-for-vocations.html" />
+    <Content Include="Html\prayers-grace-before-meals.html" />
+    <Content Include="Html\prayers-guardian-angel.html" />
+    <Content Include="Html\prayers-hail-holy-queen.html" />
+    <Content Include="Html\prayers-litany.html" />
+    <Content Include="Html\prayers-memorare.html" />
+    <Content Include="Html\prayers-morning-offering.html" />
+    <Content Include="Html\prayers-neighbourhood.html" />
+    <Content Include="Html\prayers-parents.html" />
+    <Content Include="Html\prayers-prepare-to-study.html" />
+    <Content Include="Html\prayers-short.html" />
+    <Content Include="Html\prayers-soul-of-my-saviour.html" />
+    <Content Include="Html\prayers-thanksgiving-after-meals.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="Strings\en-US\Resources.resw">
+      <SubType>Designer</SubType>
+    </PRIResource>
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
+    <VisualStudioVersion>12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(TargetPlatformIdentifier)' == '' ">
+    <TargetPlatformIdentifier>WindowsPhoneApp</TargetPlatformIdentifier>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
