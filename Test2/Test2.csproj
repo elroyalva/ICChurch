@@ -80,6 +80,7 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <Content Include="Assets\ic_splash.png" />
     <Content Include="Html\christianDevotion.html" />
     <Content Include="Html\faq.html" />
     <Content Include="Html\marian.html" />
@@ -87,7 +88,6 @@
     <Content Include="Html\prayers.html" />
     <None Include="Html\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Assets\ic_launcher.png" />
-    <Content Include="Assets\ic_splash.png" />
     <Content Include="Html\cells.html" />
     <Content Include="Html\css\bootstrap-superhero.min.css" />
     <Content Include="Html\fonts\glyphicons-halflings-regular.ttf" />
