@@ -81,6 +81,7 @@
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
     <Content Include="Assets\ic_splash.png" />
+    <Content Include="Assets\ic_splash.svg" />
     <Content Include="Html\christianDevotion.html" />
     <Content Include="Html\faq.html" />
     <Content Include="Html\marian.html" />
